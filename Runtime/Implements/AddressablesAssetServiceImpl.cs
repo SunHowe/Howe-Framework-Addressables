@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using HoweFramework.Asset;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace HoweFramework.Addressables
 {
@@ -37,6 +38,11 @@ namespace HoweFramework.Addressables
         public void ReleaseInstance(GameObject gameObject)
         {
             UnityEngine.AddressableAssets.Addressables.ReleaseInstance(gameObject);
+        }
+
+        public async Task<ISceneInstance> LoadSceneAsync(string resKey, LoadSceneMode loadMode = LoadSceneMode.Single, bool activateOnLoad = true)
+        {
+            return new AddressablesSceneInstance(await UnityEngine.AddressableAssets.Addressables.LoadSceneAsync(resKey, loadMode, activateOnLoad).Task);
         }
     }
 }
