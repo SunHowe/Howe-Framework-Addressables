@@ -31,12 +31,12 @@ namespace HoweFramework.Addressables
 
         public void Release<T>(T asset)
         {
-            UnityEngine.AddressableAssets.Addressables.Release();
+            UnityEngine.AddressableAssets.Addressables.Release(asset);
         }
 
-        public void Release(GameObject gameObject)
+        public void ReleaseInstance(GameObject gameObject)
         {
-            throw new System.NotImplementedException();
+            UnityEngine.AddressableAssets.Addressables.ReleaseInstance(gameObject);
         }
     }
 }
