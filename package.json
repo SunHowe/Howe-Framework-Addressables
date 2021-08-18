@@ -1,18 +1,20 @@
 {
-    "name": "com.howegame.framework.addressables",
-    "author": "SunHowe",
-    "displayName": "HoweFramework Addressables",
-    "description": "Provide addressables asset service.",
-    "unity": "2020.3",
-    "version": "2021.8.12",
-    "keywords": [
-        "howegame",
-        "howegameaddressables",
-        "howegameassetservice"
-    ],
-    "dependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/SunHowe/Howe-Framework-Addressables.git"
-    }
+  "name": "com.howegame.framework.addressables",
+  "author": "SunHowe",
+  "displayName": "HoweFramework Addressables",
+  "description": "Provide addressables asset service.",
+  "unity": "2020.3",
+  "version": "2021.8.12",
+  "keywords": [
+    "howegame",
+    "howegameaddressables",
+    "howegameassetservice"
+  ],
+  "dependencies": {
+    "com.unity.addressables": "1.18.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SunHowe/Howe-Framework-Addressables.git"
+  }
 }
